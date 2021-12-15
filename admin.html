@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Admin Page</h1>
+
+    <form action="" id="myForm">
+<br>
+
+<select name="" id="cate">
+        <option value="">--</option>
+        <option value="Tata 1mg health products">Tata 1mg health products</option>
+        <option value="Digene, Brufen & Cremaffin">Digene, Brufen & Cremaffin</option>
+        <option value="Multivitamin & Supplement">Multivitamin & Supplement of the week</option>
+        <option value="ayurvrda">ayurvrda</option>
+        <option value="vitamins & Supplement">vitamins & Supplement</option>
+        <option value="healthcare Devices">healthcare Devices</option>
+        <option value="winter care">winter care</option>
+        <option value="skin care">skin care</option>
+        <option value="diabetes care">diabetes care</option>
+        <option value="baby daiper,wipes">baby daiper,wipes</option>
+
+
+</select>
+
+<br>
+        <input type="text" name="" id="prodName" placeholder="Enter Product Name">
+<br>
+        <input type="text" name="" id="by" placeholder="By">
+<br>
+        <input type="text" name="" id="rating" placeholder="Rating">
+<br>
+        <input type="text" name="" id="review" placeholder="review">
+<br>
+        <input type="text" name="" id="higlight" placeholder="higlight">
+<br>
+        <input type="text" name="" id="price" placeholder="Enter Price">
+<br><br>
+        <input type="text" name="" id="url" placeholder="Enter Image URL">
+<br>
+        <input type="text" name="" id="description" placeholder="description">
+<br>
+<input type="text" name="" id="ingredient" placeholder="ingredient">
+<br>
+<input type="text" name="" id="benifits" placeholder="benifits">
+<br>
+<input type="text" name="" id="direction" placeholder="direction">
+<br>
+        <input type="submit" name="" id="">
+    </form>
+
+    <button>Go To Shop</button>
+</body>
+</html>
+
+<script>
+    document.querySelector("#myForm").addEventListener('submit',form)
+
+    var prod1 = JSON.parse(localStorage.getItem("ProjectData")) || [];
+
+    function form(event){
+        event.preventDefault();
+        
+        var prodName = document.querySelector("#prodName").value;
+        var by = document.querySelector("#by").value;
+        var rating = document.querySelector("#rating").value;
+        var higlight = document.querySelector("#higlight").value;
+        var price = document.querySelector("#price").value;
+        var url = document.querySelector("#url").value;
+        var description = document.querySelector("#description").value;
+
+        var review = document.querySelector("#review").value;
+        var ingredient = document.querySelector("#ingredient").value;
+        var benifits = document.querySelector("#benifits").value;
+        var direction = document.querySelector("#direction").value;
+        var cate = document.querySelector("#cate").value;
+
+        
+        var obj1 = {
+                cate: cate,
+            prodName : prodName,
+            by : by,
+            rating: rating,
+            review : review,
+            higlight : higlight,
+            price : price,
+            url : url,
+            description :description ,
+            ingredient : ingredient,
+            benifits : benifits,
+            direction : direction,
+        }
+        
+        prod1.push(obj1);
+        localStorage.setItem("ProjectData",JSON.stringify(prod1));
+    }
+
+    document.querySelector("button").addEventListener("click",function (){
+        window.location.href = "product.html";
+    })
+</script>
+
+
+
+
+
+
+
+

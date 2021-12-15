@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            #cont{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            width: 80%;
+            margin: auto;
+        } 
+      
+
+        #cont>div>div:nth-child(2){
+            background-color: aquamarine;
+            text-align: center;
+            font-size: 10px;
+            padding: 5px;
+        }
+
+        /* #cont>div{
+            //background-color: bisque;
+            margin: 5px;
+        } */
+        /* #cont>div{
+            padding: 20px;
+        } */
+
+        #cont>div>div:nth-child(1)>img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product</h1>
+
+    <div id="cont">
+
+    </div>
+</body>
+</html>
+
+<script>
+    var product = JSON.parse(localStorage.getItem("champData"));
+    var recent = [];
+
+    product.map(function(elem){
+        var div = document.createElement("div")
+        div.addEventListener("click",function(){
+            console.log(elem);
+            var view = [elem];
+            //window.location.href = "single.html";
+            window.open('single.html', '_blank');
+            localStorage.setItem("view",JSON.stringify(view))
+        })
+
+        var name = document.createElement("h1");
+        name.textContent = elem.productName;
+
+        var rating = document.createElement("h3");
+        rating.textContent = (elem.rating);
+
+        var review = document.createElement("h3");
+        review.textContent = (elem.review);
+
+        var img = document.createElement("img");
+        img.setAttribute("src", elem.url)
+
+         var price = document.createElement("h2");
+        price.textContent = ("Rs "+elem.price);
+
+    var divImg = document.createElement("div")    
+    divImg.append(img);
+    var divText = document.createElement("div")    
+    divText.append(name,rating,review, price);
+
+        div.append(divImg, divText);
+
+        document.querySelector("#cont").append(div);
+
+
+    })
+</script>
