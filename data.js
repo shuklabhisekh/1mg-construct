@@ -3,7 +3,7 @@ var data = [
     productName:
       "1mg Multivitamin Supreme, Zinc, Calcium and Vitamin D Immunity Booster Capsule",
     productby: "Tata 1mg Healthcare Solutions Private Limited",
-    rating: "4.1",
+    rating: "4.1",shyam
     review: "626 Ratings & 388 Reviews",
     prodHeading: [
       "Helps to strengthen the immune system ",
