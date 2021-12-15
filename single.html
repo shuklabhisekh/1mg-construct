@@ -1,317 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        #cont{
-           width: 80%;
-           margin: auto;
-           margin-top: 300px;
-           font-family: "Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-        }
+      #cont {
+        width: 80%;
+        margin: auto;
+        margin-top: 300px;
+        font-family: "Clear Sans", "Helvetica Neue", Helvetica, Arial,
+          sans-serif;
+      }
 
-        #cont>div{
-            display: grid;
-            grid-template: repeat(8, auto)/repeat(3,1fr);
-            grid-template-areas: 
-            ". prod cost"
-            "pic prod cost"
-            "pic prod cost"
-            "info info more"
-            "info info more"
-            "info info more"
-            "info info more"
-            "foot foot foot";
-            grid-gap: 15px;
-            
-        }
-        #pic{
-           // background-color: brown;
-            grid-area: pic;
-            width: 80%;
-            height: 90%;
-            margin: auto;
-        }
-        #prod{
-            grid-area: prod;
-           // background-color: chartreuse;
-            padding: 15px;
-        }
-        #prod>div{
-         // background-color: blue;
-            font-size: 22px;
-            font-weight: 700;
-            color: #212121;
-        }
-        #prod>p:nth-child(2) {
-            margin: 0px;
-          //background-color: blueviolet;
-            font-size: 12px;
-            color: #ff6f61;
-        }
-        #prod>p:nth-child(3){
-            margin: 0px;
-            margin-bottom: 6px;
-          //background-color: burlywood;
-            background-color: #1AAB2A;
-            color: #fff;
-            font-size: 12px;
-            display: inline-block;
-            padding: 1px 5px;
-            cursor: pointer;
-        }
+      #cont > div {
+        display: grid;
+        grid-template: repeat(8, auto) / repeat(3, 1fr);
+        grid-template-areas:
+          ". prod cost"
+          "pic prod cost"
+          "pic prod cost"
+          "info info more"
+          "info info more"
+          "info info more"
+          "info info more"
+          "foot foot foot";
+        grid-gap: 15px;
+      }
+      #pic {
+        // background-color: brown;
+        grid-area: pic;
+        width: 80%;
+        height: 90%;
+        margin: auto;
+      }
+      #prod {
+        grid-area: prod;
+        // background-color: chartreuse;
+        padding: 15px;
+      }
+      #prod > div {
+        // background-color: blue;
+        font-size: 22px;
+        font-weight: 700;
+        color: #212121;
+      }
+      #prod > p:nth-child(2) {
+        margin: 0px;
+        //background-color: blueviolet;
+        font-size: 12px;
+        color: #ff6f61;
+      }
+      #prod > p:nth-child(3) {
+        margin: 0px;
+        margin-bottom: 6px;
+        //background-color: burlywood;
+        background-color: #1aab2a;
+        color: #fff;
+        font-size: 12px;
+        display: inline-block;
+        padding: 1px 5px;
+        cursor: pointer;
+      }
 
-        #prod>p:nth-child(4){
-            //background-color: cornflowerblue;
-            margin: 0px;
-            margin-bottom: 20px;
-            //background-color: blueviolet;
-            font-size: 12px;
-            color: #ff6f61;
-        }
-        #prod>ul{
-           // background-color: cornflowerblue;
-            margin: 0px;
-            margin-left: -38px;
-            color: #212121;
-        }
+      #prod > p:nth-child(4) {
+        //background-color: cornflowerblue;
+        margin: 0px;
+        margin-bottom: 20px;
+        //background-color: blueviolet;
+        font-size: 12px;
+        color: #ff6f61;
+      }
+      #prod > ul {
+        // background-color: cornflowerblue;
+        margin: 0px;
+        margin-left: -38px;
+        color: #212121;
+      }
 
-        #cost{
-            grid-area: cost;
-            background-color: rgb(56, 182, 182);
-            border-radius: 10px;
-            background-color: #fff;
-            box-shadow: 0 1px 2px 1px rgb(0 0 0 / 30%);
-        }
-        #cost>button{
-            border-radius: 4px;
-            background-color: #ff6f61;
-            color: #fff;
-            font-weight: 900;
-            padding: 11px 6px;
-            cursor: pointer;
-            text-transform: uppercase;
-            text-align: center;
-            width: 100%;
-            margin-bottom: 0px;
-        }
+      #cost {
+        grid-area: cost;
+        background-color: rgb(56, 182, 182);
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 1px 2px 1px rgb(0 0 0 / 30%);
+      }
+      #cost > button {
+        border-radius: 4px;
+        background-color: #ff6f61;
+        color: #fff;
+        font-weight: 900;
+        padding: 11px 6px;
+        cursor: pointer;
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0px;
+      }
 
-        #info{
-            grid-area: info;
-           // background-color: darkgrey;
-           padding: 5px;
-        }
-        #info>p:nth-child(4){
-            //background-color: aqua;
-            font-weight: bolder;
-        }
-        #info>ul{
-            //background-color: aqua;
-            font-size: 14px;
-            margin-top: 16px;
-            text-align: justify;
-            margin-left : -40px;
-            line-height: 30px;
-        }
-        #info>span{
-            //background-color: aqua;
-            font-size: 14px;
-            margin-top: 16px;
-            text-align: justify;
-        }
-        #info>p:nth-child(9){
-            //background-color: aqua;
-            font-size: 14px;
-            margin-top: 16px;
-            text-align: justify;
-        }
+      #info {
+        grid-area: info;
+        // background-color: darkgrey;
+        padding: 5px;
+      }
+      #info > p:nth-child(4) {
+        //background-color: aqua;
+        font-weight: bolder;
+      }
+      #info > ul {
+        //background-color: aqua;
+        font-size: 14px;
+        margin-top: 16px;
+        text-align: justify;
+        margin-left: -40px;
+        line-height: 30px;
+      }
+      #info > span {
+        //background-color: aqua;
+        font-size: 14px;
+        margin-top: 16px;
+        text-align: justify;
+      }
+      #info > p:nth-child(9) {
+        //background-color: aqua;
+        font-size: 14px;
+        margin-top: 16px;
+        text-align: justify;
+      }
 
+      #foot {
+        grid-area: foot;
+        background-color: darkorchid;
+      }
+      #foot > p {
+        //background-color: aqua;
+        font-size: 46px;
+        align-items: center;
+        margin: 0px;
+      }
 
-        #foot{
-            grid-area: foot;
-            background-color: darkorchid;
-        }
-        #foot>p{
-            //background-color: aqua;
-            font-size: 46px;
-            align-items: center;
-            margin : 0px
-        }
-
-        
-        #more{
-            grid-area: more;
-            background-color: darksalmon;
-        }
+      #more {
+        grid-area: more;
+        background-color: darksalmon;
+      }
     </style>
-</head>
-<body>
-    <div id="cont">
-
-    </div>
-</body>
+  </head>
+  <body>
+    <div id="cont"></div>
+  </body>
 </html>
 
 <script>
+  var now = JSON.parse(localStorage.getItem("view"));
 
-var now = JSON.parse(localStorage.getItem("view"));
+  now.map(function (elem) {
+    // image
+    var divImg = document.createElement("img");
+    divImg.setAttribute("id", "pic");
+    divImg.setAttribute("src", elem.url);
 
+    // name , by, rating, review, highlight
+    var divName = document.createElement("div");
+    divName.textContent = elem.productName;
 
-now.map(function(elem){
-// image
-var divImg = document.createElement("img");
-divImg.setAttribute('id','pic');
-divImg.setAttribute("src", elem.url);
+    var by = document.createElement("p");
+    by.textContent = elem.productby;
 
-// name , by, rating, review, highlight
-var divName = document.createElement("div");
-divName.textContent = elem.productName ;
+    var rat = document.createElement("p");
+    rat.textContent = elem.rating;
 
-var by = document.createElement("p");
-by.textContent = elem.productby;
+    var rev = document.createElement("p");
+    rev.textContent = elem.review;
 
-var rat = document.createElement("p");
-rat.textContent = elem.rating;
+    var un = document.createElement("ul");
+    for (var i = 0; i < array.length; i++) {
+      var l1 = document.createElement("li");
+      l1.textContent = elem.prodHeading[i];
+      un.append(l1);
+    }
+    // var l1 = document.createElement("li");
+    //     l1.textContent = elem.prodHeading1;
 
-var rev = document.createElement("p");
-rev.textContent = elem.review;
+    // var l2 = document.createElement("li");
+    //     l2.textContent = elem.prodHeading2;
 
-var un = document.createElement("ul");
-var l1 = document.createElement("li");
-    l1.textContent = elem.prodHeading1;
+    // var l3 = document.createElement("li");
+    //     l3.textContent = elem.prodHeading3;
 
-var l2 = document.createElement("li");
-    l2.textContent = elem.prodHeading2;
-
-var l3 = document.createElement("li");
-    l3.textContent = elem.prodHeading3;
-
-    un.append(l1, l2, l3);
+    // un.append(l1, l2, l3);
 
     var p = document.createElement("p");
 
-p.append(divName,by,rat,rev,"Product Highlights",un)
-p.setAttribute('id','prod');
+    p.append(divName, by, rat, rev, "Product Highlights", un);
+    p.setAttribute("id", "prod");
 
+    // price , add to cart
+    var divPrice = document.createElement("div");
+    divPrice.textContent = "₹ " + elem.price;
 
-// price , add to cart
-var divPrice = document.createElement("div");
-divPrice.textContent = "₹ "+elem.price;
+    var btn = document.createElement("button");
+    btn.textContent = "Add To Cart";
+    btn.addEventListener("click", function () {
+      console.log("here");
+    });
 
-var btn = document.createElement("button");
-btn.textContent = "Add To Cart";
-btn.addEventListener("click",function(){
-console.log('here')
-})
+    var divbt = document.createElement("div");
+    divbt.setAttribute("id", "cost");
 
-var divbt = document.createElement("div");
-divbt.setAttribute('id','cost');
+    divbt.append(divPrice, btn);
 
-divbt.append(divPrice,btn);
+    // Product discription information
+    // info by, description(dd1,dd2),keyIngridents, keyIng list, keyBenefits, DirectionForUse, uses,safetyInfo, saftey measures
 
+    var nameDes = document.createElement("p");
+    nameDes.textContent = "Information By " + elem.productName;
 
-// Product discription information
-// info by, description(dd1,dd2),keyIngridents, keyIng list, keyBenefits, DirectionForUse, uses,safetyInfo, saftey measures
+    var dd1 = document.createElement("b");
+    dd1.textContent = elem.description1;
 
-var nameDes = document.createElement("p");
-nameDes.textContent = "Information By " + elem.productName;
+    var dd2 = document.createElement("span");
+    dd2.textContent = elem.description2;
 
-var dd1 = document.createElement("b");
-dd1.textContent = elem.description1;
+    var keyIng = document.createElement("p");
+    keyIng.textContent = "Key Ingredients:";
 
-var dd2 = document.createElement("span");
-dd2.textContent = elem.description2;
+    var ing = document.createElement("ul");
+    var l1 = document.createElement("li");
+    l1.textContent = elem.keyIngredient1;
+    var l2 = document.createElement("li");
+    l2.textContent = elem.keyIngredient2;
+    var l3 = document.createElement("li");
+    l3.textContent = elem.keyIngredient3;
+    var l4 = document.createElement("li");
+    l4.textContent = elem.keyIngredient4;
+    var l5 = document.createElement("li");
+    l5.textContent = elem.keyIngredient5;
+    var l6 = document.createElement("li");
+    l6.textContent = elem.keyIngredient6;
+    var l7 = document.createElement("li");
+    l7.textContent = elem.keyIngredient7;
 
-var keyIng = document.createElement("p");
-keyIng.textContent = "Key Ingredients:"
+    ing.append(l1, l2, l3, l4, l5, l6, l7);
 
-var ing = document.createElement("ul") ;
-var l1 = document.createElement("li");
-l1.textContent = elem.keyIngredient1;
-var l2 = document.createElement("li");
-l2.textContent = elem.keyIngredient2;
-var l3 = document.createElement("li");
-l3.textContent = elem.keyIngredient3;
-var l4 = document.createElement("li");
-l4.textContent = elem.keyIngredient4;
-var l5 = document.createElement("li");
-l5.textContent = elem.keyIngredient5;
-var l6 = document.createElement("li");
-l6.textContent = elem.keyIngredient6;
-var l7 = document.createElement("li");
-l7.textContent = elem.keyIngredient7;
+    var keyBenifit = document.createElement("b");
+    keyBenifit.textContent = "Key Benefits:";
 
-ing.append(l1, l2, l3, l4, l5, l6, l7 )
+    var benifit = document.createElement("ul");
+    var bn1 = document.createElement("li");
+    bn1.textContent = elem.keyBenefit1;
+    var bn2 = document.createElement("li");
+    bn2.textContent = elem.keyBenefit2;
+    var bn3 = document.createElement("li");
+    bn3.textContent = elem.keyBenefit3;
+    var bn4 = document.createElement("li");
+    bn4.textContent = elem.keyBenefit4;
+    var bn5 = document.createElement("li");
+    bn5.textContent = elem.keyBenefit5;
 
-var keyBenifit = document.createElement("b");
-keyBenifit.textContent = "Key Benefits:"
+    benifit.append(bn1, bn2, bn3, bn4, bn5);
 
-var benifit = document.createElement("ul") ;
-var bn1 = document.createElement("li");
-bn1.textContent = elem.keyBenefit1;
-var bn2 = document.createElement("li");
-bn2.textContent = elem.keyBenefit2;
-var bn3 = document.createElement("li");
-bn3.textContent = elem.keyBenefit3;
-var bn4 = document.createElement("li");
-bn4.textContent = elem.keyBenefit4;
-var bn5 = document.createElement("li");
-bn5.textContent = elem.keyBenefit5;
+    var direction = document.createElement("b");
+    direction.textContent = "Directions For Use:";
 
-benifit.append(bn1, bn2, bn3, bn4, bn5)
+    var uses = document.createElement("p");
+    uses.textContent = elem.directionUse;
 
-var direction = document.createElement("b");
-direction.textContent = "Directions For Use:"
+    var safety = document.createElement("b");
+    safety.textContent = "Safety Information:";
 
-var uses = document.createElement("p");
-uses.textContent = elem.directionUse;
+    var saft = document.createElement("ul");
+    var s1 = document.createElement("li");
+    s1.textContent = elem.safetyInfo1;
+    var s2 = document.createElement("li");
+    s2.textContent = elem.safetyInfo2;
+    var s3 = document.createElement("li");
+    s3.textContent = elem.safetyInfo3;
 
-var safety = document.createElement("b");
-safety.textContent = "Safety Information:"
+    saft.append(s1, s2, s3);
 
-var saft = document.createElement("ul") ;
-var s1 = document.createElement("li");
-s1.textContent = elem.safetyInfo1;
-var s2 = document.createElement("li");
-s2.textContent = elem.safetyInfo2;
-var s3 = document.createElement("li");
-s3.textContent = elem.safetyInfo3;
+    var divInfo = document.createElement("div");
+    divInfo.setAttribute("id", "info");
+    divInfo.append(
+      nameDes,
+      dd1,
+      dd2,
+      keyIng,
+      ing,
+      keyBenifit,
+      benifit,
+      direction,
+      uses,
+      safety,
+      saft
+    );
 
-saft.append(s1,s2,s3);
+    // Footer
+    //rating,
+    var rating = document.createElement("strong");
+    rating.textContent = "Ratings & Reviews";
 
-var divInfo = document.createElement("div");
-divInfo.setAttribute('id','info');
-divInfo.append(nameDes,dd1,dd2,keyIng,ing,keyBenifit, benifit,direction,uses,safety,saft)
+    var rat = document.createElement("p");
+    rat.textContent = elem.rating;
 
-// Footer
-//rating,
-var rating = document.createElement("strong");
-rating.textContent = "Ratings & Reviews"
+    var revi = document.createElement("bold");
+    revi.textContent = elem.review;
 
-var rat = document.createElement("p");
-rat.textContent = elem.rating;
+    var divFoot = document.createElement("div");
+    divFoot.setAttribute("id", "foot");
+    divFoot.append(rating, rat, revi);
 
-var revi = document.createElement("bold");
-revi.textContent = elem.review;
+    //right extra space
+    var divExtra = document.createElement("div");
+    divExtra.setAttribute("id", "more");
+    divExtra.textContent = " ";
 
+    //append all to cont
+    var div = document.createElement("div");
 
-var divFoot = document.createElement("div");
-divFoot.setAttribute('id','foot');
-divFoot.append(rating,rat,revi);
-
-
-//right extra space
-var divExtra = document.createElement("div");
-divExtra.setAttribute('id','more');
-divExtra.textContent = " ";
-
-//append all to cont
-var div = document.createElement("div");
-
-div.append(divImg, p, divbt, divInfo, divFoot, divExtra);
-document.querySelector("#cont").append(div);
-})
+    div.append(divImg, p, divbt, divInfo, divFoot, divExtra);
+    document.querySelector("#cont").append(div);
+  });
 </script>
