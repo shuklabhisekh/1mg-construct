@@ -168,10 +168,10 @@ divImg.setAttribute("src", elem.url);
 
 // name , by, rating, review, highlight
 var divName = document.createElement("div");
-divName.textContent = elem.prodName ;
+divName.textContent = elem.productName ;
 
 var by = document.createElement("p");
-by.textContent = elem.by;
+by.textContent = elem.productby;
 
 var rat = document.createElement("p");
 rat.textContent = elem.rating;
@@ -181,13 +181,13 @@ rev.textContent = elem.review;
 
 var un = document.createElement("ul");
 var l1 = document.createElement("li");
-    l1.textContent = elem.h1;
+    l1.textContent = elem.prodHeading1;
 
 var l2 = document.createElement("li");
-    l2.textContent = elem.h2;
+    l2.textContent = elem.prodHeading2;
 
 var l3 = document.createElement("li");
-    l3.textContent = elem.h3;
+    l3.textContent = elem.prodHeading3;
 
     un.append(l1, l2, l3);
 
@@ -217,32 +217,32 @@ divbt.append(divPrice,btn);
 // info by, description(dd1,dd2),keyIngridents, keyIng list, keyBenefits, DirectionForUse, uses,safetyInfo, saftey measures
 
 var nameDes = document.createElement("p");
-nameDes.textContent = "Information By " + elem.prodName;
+nameDes.textContent = "Information By " + elem.productName;
 
 var dd1 = document.createElement("b");
-dd1.textContent = elem.d1;
+dd1.textContent = elem.description1;
 
 var dd2 = document.createElement("span");
-dd2.textContent = elem.d2;
+dd2.textContent = elem.description2;
 
 var keyIng = document.createElement("p");
 keyIng.textContent = "Key Ingredients:"
 
 var ing = document.createElement("ul") ;
 var l1 = document.createElement("li");
-l1.textContent = elem.k1;
+l1.textContent = elem.keyIngredient1;
 var l2 = document.createElement("li");
-l2.textContent = elem.k2;
+l2.textContent = elem.keyIngredient2;
 var l3 = document.createElement("li");
-l3.textContent = elem.k3;
+l3.textContent = elem.keyIngredient3;
 var l4 = document.createElement("li");
-l4.textContent = elem.k4;
+l4.textContent = elem.keyIngredient4;
 var l5 = document.createElement("li");
-l5.textContent = elem.k5;
+l5.textContent = elem.keyIngredient5;
 var l6 = document.createElement("li");
-l6.textContent = elem.k6;
+l6.textContent = elem.keyIngredient6;
 var l7 = document.createElement("li");
-l7.textContent = elem.k7;
+l7.textContent = elem.keyIngredient7;
 
 ing.append(l1, l2, l3, l4, l5, l6, l7 )
 
@@ -251,15 +251,15 @@ keyBenifit.textContent = "Key Benefits:"
 
 var benifit = document.createElement("ul") ;
 var bn1 = document.createElement("li");
-bn1.textContent = elem.kb1;
+bn1.textContent = elem.keyBenefit1;
 var bn2 = document.createElement("li");
-bn2.textContent = elem.kb2;
+bn2.textContent = elem.keyBenefit2;
 var bn3 = document.createElement("li");
-bn3.textContent = elem.kb3;
+bn3.textContent = elem.keyBenefit3;
 var bn4 = document.createElement("li");
-bn4.textContent = elem.kb4;
+bn4.textContent = elem.keyBenefit4;
 var bn5 = document.createElement("li");
-bn5.textContent = elem.kb5;
+bn5.textContent = elem.keyBenefit5;
 
 benifit.append(bn1, bn2, bn3, bn4, bn5)
 
@@ -267,18 +267,18 @@ var direction = document.createElement("b");
 direction.textContent = "Directions For Use:"
 
 var uses = document.createElement("p");
-uses.textContent = elem.direction;
+uses.textContent = elem.directionUse;
 
 var safety = document.createElement("b");
 safety.textContent = "Safety Information:"
 
 var saft = document.createElement("ul") ;
 var s1 = document.createElement("li");
-s1.textContent = elem.saf1;
+s1.textContent = elem.safetyInfo1;
 var s2 = document.createElement("li");
-s2.textContent = elem.saf2;
+s2.textContent = elem.safetyInfo2;
 var s3 = document.createElement("li");
-s3.textContent = elem.saf3;
+s3.textContent = elem.safetyInfo3;
 
 saft.append(s1,s2,s3);
 
