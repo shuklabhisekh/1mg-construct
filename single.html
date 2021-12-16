@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
         #cont{
-           width: 80%;
+           width: 85%;
            margin: auto;
            margin-top: 300px;
            font-family: "Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -17,9 +17,9 @@
             display: grid;
             grid-template: repeat(8, auto)/repeat(3,1fr);
             grid-template-areas: 
+            "pic prod cost"
+            "pic prod cost"
             ". prod cost"
-            "pic prod cost"
-            "pic prod cost"
             "info info more"
             "info info more"
             "info info more"
@@ -28,63 +28,84 @@
             grid-gap: 15px;
             
         }
-        /* #pic{
+        #pic{
            // background-color: brown;
            
             grid-area: pic;
             width: 80%;
-            height: 90%;
+            height: 80%;
             margin: auto;
+            margin-top:15%;
             
-        } */
-#pic:hover{
+        }
+/* #pic:hover{
     transform:scale(1.8);
-}
-
+} */
+        /* full div of Product name, Product By, Rating,Review, Product highlights */
         #prod{
             grid-area: prod;
            // background-color: chartreuse;
             padding: 15px;
         }
-        /* #prod>div{
+        /* Product Name */
+        #prod>div{
          // background-color: blue;
             font-size: 22px;
             font-weight: 700;
-            color: #212121;
-        } */
+            color: #212121
+        }
+        /* Product by */
         #prod>p:nth-child(2) {
             margin: 0px;
           //background-color: blueviolet;
             font-size: 12px;
             color: #ff6f61;
+            margin-bottom: 9px;
+            margin-top: 9px;
         }
-        #prod>p:nth-child(3){
+        /* rating */
+        #rare>p:nth-child(1){
             margin: 0px;
+            width: 20px;
+            height: 20px;
             margin-bottom: 6px;
-          //background-color: burlywood;
+          background-color: rgb(46, 44, 41);
             background-color: #1AAB2A;
+            border-radius: 2px;
             color: #fff;
             font-size: 12px;
-            display: inline-block;
-            padding: 1px 5px;
+           // display: inline-block;
+            padding: 5px 5px;
             cursor: pointer;
+            margin-right: 5px;
         }
-/* 
-        #prod>p:nth-child(4){
+        /* review */
+        #rare>p:nth-child(2){
             //background-color: cornflowerblue;
             margin: 0px;
             margin-bottom: 20px;
+            margin-top: 6px;
             //background-color: blueviolet;
             font-size: 12px;
             color: #ff6f61;
-        } */
-        /* #prod>ul{
+        }
+
+#rare{
+    display: flex;
+}
+
+        /* Product Highlights */
+        #prod>ul{
            // background-color: cornflowerblue;
             margin: 0px;
-            margin-left: -38px;
+            margin-left: -36px;
             color: #212121;
-        } */
-
+            font-size: 14px;
+            margin-top: 13px;
+            text-align: justify;
+            line-height: 19px;          
+        }
+     
         #cost{
             grid-area: cost;
             background-color: rgb(56, 182, 182);
@@ -110,42 +131,47 @@
            // background-color: darkgrey;
            padding: 5px;
         }
-        /* #info>p:nth-child(4){
+        /* Key Ingrident Heading Making Bold */
+        #info>p:nth-child(4){
             //background-color: aqua;
             font-weight: bolder;
-        } */
-        /* #info>ul{
+        }
+        /* Key Highlights and Key Benefits points  */
+        #info>ul{
             //background-color: aqua;
             font-size: 14px;
             margin-top: 16px;
             text-align: justify;
-            margin-left : -40px;
+            margin-left : -35px;
             line-height: 30px;
-        } */
-        /* #info>span{
+        }
+        /* product info */
+        #info>span{
             //background-color: aqua;
             font-size: 14px;
             margin-top: 16px;
             text-align: justify;
-        } */
-        /* #info>p:nth-child(9){
-            //background-color: aqua;
+        }
+        /* direction content */
+        #info>p:nth-child(9){
+            /* background-color: aqua; */
             font-size: 14px;
             margin-top: 16px;
             text-align: justify;
-        } */
+        }
 
-
+        /* footer */
         #foot{
             grid-area: foot;
             background-color: darkorchid;
         }
-        /* #foot>p{
+        /* rating footer */
+        #foot>p{
             //background-color: aqua;
             font-size: 46px;
             align-items: center;
             margin : 0px
-        } */
+        }
 
         
         #more{
@@ -155,9 +181,7 @@
     </style>
 </head>
 <body>
-    <div id="cont">
-
-    </div>
+    <div id="cont"></div>
 </body>
 </html>
 
@@ -173,6 +197,14 @@ divImg.setAttribute('id','pic');
 divImg.setAttribute("src", elem.url);
 
 // name , by, rating, review, highlight
+
+
+var combo = document.createElement("div");
+combo.setAttribute("id","rare");
+//combo.textContent = "combo"
+
+
+
 var divName = document.createElement("div");
 divName.textContent = elem.productName ;
 
@@ -186,20 +218,25 @@ var rev = document.createElement("p");
 rev.textContent = elem.review;
 
 var un = document.createElement("ul");
-var l1 = document.createElement("li");
-    l1.textContent = elem.prodHeading1;
+for(var i=0; i<elem.prodHeading.length; i++){
+    var sub = document.createElement("li");
+    sub.textContent = elem.prodHeading[i];
+    //console.log(sub);
+    un.append(sub);
+}
+// var l1 = document.createElement("li");
+//     l1.textContent = elem.prodHeading1;
 
-var l2 = document.createElement("li");
-    l2.textContent = elem.prodHeading2;
+// var l2 = document.createElement("li");
+//     l2.textContent = elem.prodHeading2;
 
-var l3 = document.createElement("li");
-    l3.textContent = elem.prodHeading3;
-
-    un.append(l1, l2, l3);
+// var l3 = document.createElement("li");
+//     l3.textContent = elem.prodHeading3;
+//     un.append(l1, l2, l3);
 
     var p = document.createElement("p");
-
-p.append(divName,by,rat,rev,"Product Highlights",un)
+combo.append(rat,rev);
+p.append(divName,by,combo,"Product Highlights",un)
 p.setAttribute('id','prod');
 
 
