@@ -24,6 +24,7 @@
       }
 
       #cont > div {
+       // background-color: aqua;
         display: grid;
         grid-template: repeat(7, auto) / repeat(3, 1fr);
         grid-template-areas:
@@ -38,6 +39,27 @@
         /* "down down down"; */
         grid-gap: 15px;
       }
+
+/* media */
+@media only screen and (min-width: 375px) and (max-width: 812px){
+  #cont > div {
+    width: 100%;
+    /* margin-left: -9%;  */
+    margin: auto;
+       /* background-color: aqua; */
+        display: grid;
+        grid-template: repeat(2, auto) / repeat(1, 1fr);
+        grid-template-areas:
+         "pic"
+         "prod"
+         "cost"
+         "info"
+         "more";
+      };
+}
+/* media end */
+
+
       #pic {
         // background-color: brown;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
@@ -228,6 +250,21 @@
           "f k . . . . . . . . . . p"
           "g l l . . . . . . . . . q";
       }
+
+
+      /* media rating review start */
+      @media only screen and (min-width: 375px) and (max-width: 812px){
+        #ratingTab {
+          width: 100%;
+          margin: auto;
+          /* margin-left: 1%; */
+          /* margin-left: 26%; */
+          /* background-color: brown; */
+        };
+
+      }
+      /* media  rating review end */
+
       #ratingTab > #name {
         //background-color: aqua;
         grid-area: y;
@@ -488,7 +525,19 @@
 
       /* footer 1 end */
 
+      /* media footer 1 start */
+      @media only screen and (min-width: 375px) and (max-width: 812px){
+        .container {
+      /* background-color: cadetblue; */
+      width: 100%;
+      margin: auto;
+    /* margin-left: 2%; */
+};
+      }
+      /* media footer 1 end */
 
+
+      
       /* footer start */
       #container{
         
@@ -643,6 +692,16 @@ text-align: center;
 }
 
       /* footer end */
+
+/* media footer last start */
+
+/* media footer last end */
+
+
+      /* media query start */
+      
+      /* media query end */
+
     </style>
   </head>
   <body>
