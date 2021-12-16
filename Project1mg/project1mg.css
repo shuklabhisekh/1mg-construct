@@ -1,0 +1,320 @@
+
+.header{
+    font-family: "Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+ display: flex;
+ flex-direction: column;
+ height:auto;
+}
+
+.header_first_row{
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-bottom: 1px solid #f1f4f6;;
+}
+
+.header_first_row_first_section{
+    width: 70%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 250px;
+    padding-left: 30px;
+}
+
+.header_first_row_second_section{
+    width: 30%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 15px;
+   color: #212121;
+}
+
+.text_inside_first_header_row{
+    font-weight: 600;
+    font-size: 16px;
+    color: #212121;
+}
+
+.text_inside_first_header_row:hover{
+    color: #ff6f61;
+}
+
+.logo_image{
+    height: 34px;
+}
+
+.cart_icon{
+    background: url(https://res.cloudinary.com/du8msdgbj/image/upload/v1570101941/cart-icon-rebrand_vp4k0f.svg) no-repeat;
+    width: 23px;
+    height: 23px;
+}
+
+.city_list{
+    display: flex;
+    flex-direction: row;
+    background-color:#f1f4f6 ;
+    width: 50px;
+    height: 30px;
+}
+
+.cities_input{
+    width: 180px;
+    height: 25px;
+    background-color:#f1f4f6 ;
+    border: none;
+    height: 35px;
+}
+
+.navigation_icon{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 35px;
+    background-color:#f1f4f6 ;
+}
+
+.header_second_row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 8px;
+    height: 35px;
+}
+
+.header_second_row_first_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    padding-left: 30px;
+}
+
+.header_second_row_second_section{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    align-items: center;
+    height: 40px;
+}
+
+.search_box{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 25px;
+    
+    height: 35px;
+    padding-right: 190px;
+}
+
+.locator_icon{
+    background: url(https://res.cloudinary.com/du8msdgbj/image/sprite/v1539261312/header_icons_v1.3.png) no-repeat;
+    background-position: 0 -50px;
+    width: 16px;
+    height: 16px;
+}
+
+.search_input{
+    width: 620px;
+    height: 25px;
+    background-color:#f1f4f6 ;
+    border: none;
+    height: 35px;
+}
+
+.discount_icon{
+    height: 18px;
+    width: 18px;
+    padding-bottom: 5px;
+}
+.discount_tag{
+    font-size: 12px;
+    font-weight: 12px;
+    padding-right: 20px;
+    padding-left: 8px;
+}
+
+.upload{
+ background-color: #ff6f61; 
+ width: 140px;  
+ height: 40px;
+ border: 0;
+ border-radius: 6px;
+ color: #f1f4f6;
+ font-weight: 500;
+ font-size: 16px;
+}
+
+.header_third_row{
+ width: 100%;   
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ margin-top: 10px;
+ border-top: 1px solid #f1f4f6;
+ padding-top: 15px;
+ border-bottom: 1px solid #f1f4f6;
+ padding-bottom: 10px;
+}
+
+.drop_down{
+  color: #212121;
+  position: relative;
+  display: inline-block;
+}
+
+
+.drop_down_content{
+    display: none;
+}
+
+
+
+.drop_down:hover{
+    color: #ff6f61;
+}
+
+.drop_down:hover .drop_down_content{
+    display: block;   
+}
+
+.drop_down_content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    text-align: left;
+    z-index: 1;
+    border-top: none;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 20%);
+    border-radius: 0 0 3px 3px;
+    min-width: 200px;
+    white-space: nowrap;
+    
+}
+
+.drop_down_content ul{
+  list-style-type: none;
+  margin: none;
+}
+
+.drop_down_content li{
+    padding-top: 4px;
+    margin: none;
+}
+
+.dropdown_first_heading{
+    color: #757575;
+    font-size: 13.2px;
+   padding-top: none;
+   padding-bottom: none;
+    padding-right: 5px;
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+.dropdown_first_heading:hover{
+    color:#ff6f61
+}
+
+.dropdown_second_heading{
+   font-weight: 200;
+   color: #212121;
+   padding-bottom: px;
+   font-size: 13.5px;
+}
+.dropdown_second_heading:hover{
+    color:#ff6f61
+}
+
+.login_signup{
+    cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .corousel_section{
+      width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .corousel_1st_section{
+      width: 70%;
+
+  }
+  .corousel_2nd_section{
+      width: 30%;
+    
+
+
+    }
+
+.curosel_side_pic{
+    height: 270px;
+}
+
+.corousel_down_pic{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+ 
+}
+.centered_text{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 20px;
+    border-top: 2px solid #e0e0e0;
+
+}
+.corousel_down_pic_size{
+    width: 80%;
+    height: 130px;
+}
