@@ -1,0 +1,166 @@
+
+#container{
+    border: 1px solid red;
+    background-color: rgb(246,246,246);
+    font-family:"Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+#header{
+    border: 1px solid blue;
+    height: 45px;
+    margin-bottom: 40px;
+    background-color: white;
+    display: flex;
+}
+#logo{
+    src: url("https://www.1mg.com/images/tata_1mg_logo.svg");
+    margin-left: 20px;
+    height: 80%;
+    cursor: pointer;
+}
+#search{
+    margin-right: 36%;
+}
+/* #searchlogo{
+    width:5px;
+    height: 20px;
+} */
+#help{
+    font-family:"Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+#inputheader{
+    width: 600px;
+    height: 72%;
+    background-color: rgb(241,244,246);
+    border: none;
+    margin-left: 5%;
+    margin-top:5px ;
+    padding-left: 20px;
+}
+#body{
+    border: 1px solid maroon;
+    height: 1100px;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#bodyLeft{
+    border: 1px solid orange;
+    width: 56%;
+    height: 100%;
+}
+#bodyLeft>p,.smallbox0>p{
+    font-family: "Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#leftGoToPurchase{
+    border: 1px solid purple;
+    height: 20%;
+    width: 100%;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+    background: #fff;
+}
+
+#bodyRight{
+    border: 1px solid orange;
+    width: 40%;
+    height: 100%;
+}
+#footer{
+    /* border: 1px solid green; */
+    height: 135px;
+    width: 78%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 56% 41%;
+    justify-content: space-between;
+    font-size: 10px;
+    line-height: 14px;
+}
+#footer>div{
+    /* border: 1px solid orange; */
+}
+.footertext{
+    padding:0px 10px ;
+    color:rgb(117, 117, 117);
+    margin-bottom: -10px;
+}
+#termnCond{
+    text-decoration: none;
+    color:rgb(255, 111, 97)
+}
+.footerstar{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.smallbox1{
+    border: 1px solid red;
+    display: grid;
+    height: 950px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,40%);
+    font-family:"Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
+} 
+.smallbox1>div{
+    border: 1px solid blue;
+    display: grid; 
+    grid-template-rows: 46% 64%;
+    line-height: 17px;
+    padding: 5px;
+    grid-gap: 5px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+    background: #fff;
+    margin-bottom: 25px;
+}
+.smallbox1>div>div:nth-child(2){
+    /* border: 2px solid black;
+    background-color: aquamarine; */
+    /* font-size: 10px;
+    padding: 5px;
+    height: 100%; */
+}
+
+.smallbox1>div>div:nth-child(1)>img{
+    height: 60%;
+    position: relative;
+    width: 100%;
+    object-fit: contain;
+    margin-top: 20px;
+}
+.buyMoreName{
+    font-size: 14px;
+}
+
+.ratingreview{
+    display:flex;
+    border: 1px solid magenta;
+}
+.ratingdiv{
+    border: 1px solid gold;
+    color: white;
+    background-color: rgb(26,171,42);
+    padding: 0px;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-weight:bolder ;
+    font-size: 12px;
+    height: 30px;
+    width: 50px;
+    text-align: center;
+}
+.reviewfont{
+    color:rgb(118, 118, 118);
+    font-size:12px;
+}
