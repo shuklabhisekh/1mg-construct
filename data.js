@@ -545,5 +545,18 @@ slice1.map(function (elem) {
   });
   productbox.setAttribute("class", "productbox");
   productbox.append(imagebox, details);
+
   brand.append(productbox);
 });
+
+var titlebox = document.querySelector(".home-brand-title-box");
+var brandtitle = document.createElement("h3");
+brandtitle.setAttribute("class", "brandtitle");
+brandtitle.textContent = "Tata 1mg Products";
+var seeall1 = document.createElement("button");
+seeall1.setAttribute("class", "seeall");
+seeall1.textContent = "SEE ALL";
+titlebox.append(brandtitle, seeall1);
+
+var brandbox = document.querySelector(".home-1mg-products");
+brandbox.append(titlebox, brand);
