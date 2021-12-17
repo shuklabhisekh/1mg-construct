@@ -539,9 +539,9 @@ slice1.map(function (elem) {
   var productbox = document.createElement("div");
   productbox.addEventListener("click", function () {
     console.log(elem);
-    var clicked1 = [elem];
+    var view = [elem];
     window.location.href = "single.html";
-    localStorage.setItem("clicked1", JSON.stringify(clicked1));
+    localStorage.setItem("view", JSON.stringify(view));
   });
   productbox.setAttribute("class", "productbox");
   productbox.append(imagebox, details);
