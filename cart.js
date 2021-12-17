@@ -1,4 +1,3 @@
-
 var product = JSON.parse(localStorage.getItem("ProjectData"));
 var recent = [];
 
@@ -35,6 +34,11 @@ product.map(function(elem){
     price.textContent = (elem.price);
     price.setAttribute("class","buyMoreName")
 
+     var divprice=document.createElement("div")
+     divprice.setAttribute("id","pricediv")
+     var add=document.createElement("p")
+     add.textContent="ADD"
+
 var ratingReview=document.createElement("div")
 ratingReview.setAttribute("class","ratingreview")
 var ratingdiv=document.createElement("div")
@@ -46,8 +50,9 @@ divImg.append(img);
 var divText = document.createElement("div") 
 ratingdiv.append(rating)
 reviewdiv.append(review)
+divprice.append(price,add)
  ratingReview.append(ratingdiv,reviewdiv)   
-divText.append(name,by,ratingReview, price);
+divText.append(name,by,ratingReview, divprice);
 
     div.append(divImg, divText);
 
