@@ -30,6 +30,7 @@
       .productbox:hover {
         box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
           rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        border-radius: 5px;
       }
       .productimage {
         width: 100%;
@@ -111,11 +112,40 @@
         color: #212121;
         letter-spacing: 1px;
       }
+      .home-brand-title-box {
+        /* border: 1px solid green; */
+        text-align: center;
+        margin: auto;
+        width: 90%;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .seeall {
+        background-color: #ff6f61;
+        color: white;
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        box-sizing: border-box;
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+      }
+      .brandtitle {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: #212121;
+      }
     </style>
   </head>
   <body>
-    <div class="brand"></div>
+    <div class="home-1mg-products">
+      <div class="home-brand-title-box"></div>
+      <div class="brand"></div>
+    </div>
   </body>
 </html>
 
-<script src="./homeproducts.js"></script>
+<script src="./data.js"></script>
