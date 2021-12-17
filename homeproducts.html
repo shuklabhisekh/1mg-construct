@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: "Clear Sans", "Helvetica Neue", Helvetica, Arial,
+          sans-serif;
+      }
+      .brand {
+        /* border: 1px solid red; */
+        display: grid;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 5px;
+        box-shadow: 0 0 7px 0 rgb(0 0 0 / 14%);
+        /* background-color: rgb(246, 246, 246); */
+      }
+      .productbox {
+        height: fit-content;
+        /* background-color: aqua; */
+        padding: 5px;
+      }
+      .productbox:hover {
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+          rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        border-radius: 5px;
+      }
+      .productimage {
+        width: 100%;
+        height: 100%;
+        /* size: 200px * 200px; */
+      }
+      .image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      /* .details {
+
+      } */
+      .name {
+        height: 44px;
+        line-height: 20px;
+        font-size: 14px;
+        margin: 2px;
+        padding: 3px;
+        margin-top: 10px;
+        font-weight: 400;
+        line-gap-override: 2px;
+        color: #212121;
+        object-fit: contain;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .quantity {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 17px;
+        color: #757575;
+        margin: 2px;
+        padding: 3px;
+      }
+      .ratings {
+        display: flex;
+      }
+      .ratestar {
+        margin: 2px;
+        padding: 3px;
+        background-color: #1aab2a;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 17px;
+        color: #ffffff;
+      }
+      .ratnum {
+        margin: 2px;
+        padding: 3px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 17px;
+        color: rgba(0, 0, 0, 0.58);
+      }
+      .cost {
+        margin: 2px;
+        margin-left: 0px;
+      }
+      .mrp {
+        margin: 2px;
+        padding: 3px;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 16px;
+        color: #1aab2a;
+      }
+      .price {
+        margin: 2px;
+        padding: 2px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23px;
+        color: #212121;
+        letter-spacing: 1px;
+      }
+      .home-brand-title-box {
+        /* border: 1px solid green; */
+        text-align: center;
+        margin: auto;
+        width: 90%;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .seeall {
+        background-color: #ff6f61;
+        color: white;
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        box-sizing: border-box;
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+      }
+      .brandtitle {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: #212121;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="home-1mg-products">
+      <div class="home-brand-title-box"></div>
+      <div class="brand"></div>
+    </div>
+  </body>
+</html>
+
+<script src="./data.js"></script>

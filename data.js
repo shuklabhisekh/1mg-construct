@@ -1,10 +1,14 @@
 var data = [
   {
+    brand: "1mg",
     productName:
       "1mg Multivitamin Supreme, Zinc, Calcium and Vitamin D Immunity Booster Capsule",
     productby: "Tata 1mg Healthcare Solutions Private Limited",
     rating: "4.1",
+    ratnum: "626",
+    revnum: "388",
     review: "626 Ratings & 388 Reviews",
+    quantity: "a pack of 1 bundle",
     prodHeading: [
       "Helps to strengthen the immune system ",
       "Helps to improve physical fitness and strength",
@@ -54,11 +58,15 @@ var data = [
     ],
   },
   {
+    brand: "1mg",
     productName:
       " Tata 1mg Calcium + Vitamin D3, Zinc, Magnesium and Alfalfa Tablets for Joint Health & Immunity",
     productby: "Tata 1mg Healthcare Solutions Private Limited",
     rating: "4.2",
+    ratnum: "633",
+    revnum: "357",
     review: "633 Ratings & 357 Reviews",
+    quantity: "a pack of 1 bundle",
     prodHeading: [
       "Helps in maintaining healthy bones and teeth",
       "Reduces the risk of Osteoporosis and Rickets",
@@ -108,11 +116,15 @@ var data = [
     ],
   },
   {
+    brand: "1mg",
     productName:
       "1mg Women's Multivitamin, Zinc, Vitamin C, Calcium, Vitamin D, and Iron Immunity Booster Tablet",
     productby: "Tata 1mg Healthcare Solutions Private Limited",
     rating: "4.2",
+    ratnum: "223",
+    revnum: "121",
     review: "223 Ratings & 121 Reviews",
+    quantity: "a pack of 1 bundle",
     prodHeading: [
       "Supports Bone, Skin and Eye health ",
       "Prevents hormonal imbalance",
@@ -159,10 +171,15 @@ var data = [
     ],
   },
   {
+    brand: "1mg",
+
     productName: "1mg Hydration Drink Mix Electrolytes Orange",
     productby: "Tata 1mg Healthcare Solutions Private Limited",
     rating: "4.4",
+    ratnum: "9",
+    revnum: "0",
     review: "9 Ratings",
+    quantity: "a pack of 1 bundle",
     prodHeading: [
       "Rehydrates faster than water",
       "Maintains hydration more effectively than plain water",
@@ -191,10 +208,15 @@ var data = [
     ],
   },
   {
+    brand: "1mg",
+
     productName: "Digene Acidity & Gas Relief Gel Orange",
     productby: "Abbott",
     rating: "4.5",
+    ratnum: "195",
+    revnum: "103",
     review: "195 Ratings & 103 Reviews",
+    quantity: "a pack of 1 bundle",
     prodHeading: [
       "Helps relieve bloating, belching, and gas",
       "Helps relieve the feeling of discomfort in the stomach",
@@ -230,11 +252,15 @@ var data = [
     ],
   },
   {
+    brand: "1mg",
     productName:
       "1mg High Fiber with Pre- & Probiotics with Inulin, Guar gum, & Resistant Maltodextrin Unflavoured Unflavoured with Resistant Maltodextrin, Inulin and Guar Gum",
     productby: "Tata 1mg Healthcare Solutions Private Limited",
     rating: "4.2",
+    ratnum: "28",
+    revnum: "9",
     review: "28 Ratings & 9 Reviews",
+    quantity: "a pack of 1 bundle",
     prodHeading: [
       "Assists the body in constructing and supporting a healthy colony of bacteria and other microorganisms",
       "Probiotics are used to enhance digestion and restore healthy flora",
@@ -275,11 +301,15 @@ var data = [
     ],
   },
   {
+    brand: "1mg",
     productName:
       "1mg Apple Cider Vinegar Probiotic Plus - Raw Unfiltered Unpasteurized with The Mother",
     productby: "Tata 1mg Healthcare Solutions Private Limited",
     rating: "4.3",
+    ratnum: "281",
+    revnum: "163",
     review: "281 Ratings & 163 Reviews",
+    quantity: "a pack of 1 bundle",
     prodHeading: [
       "Helps in healthy weight management",
       "Enriched with Probiotic (1Billion CFUs)",
@@ -324,11 +354,15 @@ var data = [
     ],
   },
   {
+    brand: "1mg",
     productName:
       "1mg Active Nutrition Mix with Whey Protein, Vitamin D, Choline and Fiber Vanilla",
     productby: "Tata 1mg Healthcare Solutions Private Limited",
     rating: "4.1",
+    ratnum: "37",
+    revnum: "23",
     review: "37 Ratings & 23 Reviews",
+    quantity: "a pack of 1 bundle",
     prodHeading: [
       "May improve stamina and repair muscle tissues",
       "Prebiotic Soluble Fiber Inulin supports gastrointestinal health and maintains cholesterol and blood sugar levels",
@@ -364,10 +398,15 @@ var data = [
     ],
   },
   {
+    brand: "Zandu",
+
     productName: "Zandu Chyavanprash Avaleha Jaggery",
     productby: "Zandu Pharmaceutical Works Ltd",
     rating: "4.5",
+    ratnum: "104",
+    revnum: "51",
     review: "104 Ratings & 51 Reviews",
+    quantity: "a pack of 1 bundle",
     prodHeading: [
       "Boosts energy in the body",
       "Helps keep common ailments such as cold and cough at bay",
@@ -404,11 +443,15 @@ var data = [
     ],
   },
   {
+    brand: "Dettol",
     productName:
       "Dettol Original Bathing Soap Bar 125gm Each (Buy 4 Get 1 Free)",
     productby: "Reckitt Benckiser",
     rating: "4.5",
+    ratnum: "233",
+    revnum: "116",
     review: "233 Ratings & 116 Reviews",
+    quantity: "a pack of 1 bundle",
     prodHeading: [
       "Germ Protection: Dettol soap protects from 99.99% of germs including viruses and bacteria. Recommended by Indian Medical Association (IMA)",
       "Bathing: Contains 76% TFM for a rich and creamy lather",
@@ -446,3 +489,74 @@ var data = [
 ];
 
 localStorage.setItem("champData", JSON.stringify(data));
+
+var slice1 = data.slice(0, 7);
+slice1.map(function (elem) {
+  var brand = document.querySelector(".brand");
+
+  var imagebox = document.createElement("div");
+  imagebox.setAttribute("class", "productimage");
+  var image = document.createElement("img");
+  image.setAttribute("class", "image");
+  image.setAttribute("src", elem.url);
+  imagebox.append(image);
+
+  var details = document.createElement("div");
+  details.setAttribute("class", "details");
+  var name = document.createElement("p");
+  name.setAttribute("class", "name");
+  var quantity = document.createElement("p");
+  quantity.setAttribute("class", "quantity");
+  var ratings = document.createElement("div");
+  ratings.setAttribute("class", "ratings");
+  var ratestar = document.createElement("div");
+  ratestar.setAttribute("class", "ratestar");
+  var ratnum = document.createElement("div");
+  ratnum.setAttribute("class", "ratnum");
+
+  var cost = document.createElement("p");
+  cost.setAttribute("class", "cost");
+  var mrp = document.createElement("p");
+  mrp.setAttribute("class", "mrp");
+  var price = document.createElement("p");
+  price.setAttribute("class", "price");
+
+  name.textContent = elem.productName;
+  quantity.textContent = elem.quantity;
+  ratestar.textContent = elem.rating;
+  ratnum.textContent = elem.ratnum + " ratings";
+  let p = +elem.price;
+  let d = +elem.discount;
+  let m = (p * 100) / d;
+  let mrprice = Math.floor(m);
+
+  mrp.textContent = "MRP ₹" + mrprice + " " + elem.discount + "% off";
+  price.textContent = "₹" + elem.price;
+  ratings.append(ratestar, ratnum);
+  cost.append(mrp, price);
+  details.append(name, quantity, ratings, cost);
+
+  var productbox = document.createElement("div");
+  productbox.addEventListener("click", function () {
+    console.log(elem);
+    var view = [elem];
+    window.location.href = "single.html";
+    localStorage.setItem("view", JSON.stringify(view));
+  });
+  productbox.setAttribute("class", "productbox");
+  productbox.append(imagebox, details);
+
+  brand.append(productbox);
+});
+
+var titlebox = document.querySelector(".home-brand-title-box");
+var brandtitle = document.createElement("p");
+brandtitle.setAttribute("class", "brandtitle");
+brandtitle.textContent = "Tata 1mg Products";
+var seeall1 = document.createElement("button");
+seeall1.setAttribute("class", "seeall");
+seeall1.textContent = "SEE ALL";
+titlebox.append(brandtitle, seeall1);
+
+var brandbox = document.querySelector(".home-1mg-products");
+brandbox.append(titlebox, brand);
