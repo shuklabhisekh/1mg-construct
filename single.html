@@ -1553,13 +1553,6 @@ text-align: center;
       addCart(elem);
     });
 
-    var btn1 = document.createElement("button");
-    btn1.textContent = "Empty Cart";
-    btn1.addEventListener("click", function () {
-      console.log("here1");
-      emptyCart(elem);
-    });
-
     function addCart(elem){
       let localCart = JSON.parse(localStorage.getItem("cart"));
       if (localCart === null) {
@@ -1570,6 +1563,12 @@ text-align: center;
       console.log(localCart);
     }
 
+    var btn1 = document.createElement("button");
+    btn1.textContent = "Empty Cart";
+    btn1.addEventListener("click", function () {
+      console.log("here1");
+      emptyCart(elem);
+    });
     function emptyCart(elem){
       let localCart = JSON.parse(localStorage.getItem("cart"));
       let l = localCart.length;
