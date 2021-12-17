@@ -59,3 +59,46 @@ divText.append(name,by,ratingReview, divprice);
     document.querySelector(".smallbox1").append(div);
 
 })
+
+
+
+
+
+
+
+
+
+
+var cartpage=JSON.parse(localStorage.getItem("champData"))
+console.log(cartpage)
+
+// cartpage.map(function(e){
+//     document.querySelector(#leftPurchaseName).textContent=e.productName
+// })
+
+
+var count=1
+var leftpurchasefirstprice=document.querySelector("#leftPurchasePriceFirst").innerText
+    leftshowprice=+leftpurchasefirstprice
+
+function dec(){
+    count--;
+    if(count==0){
+        window.location.href="cartempty.html"
+    }
+var NumberIncDec=document.querySelector("#betweenIncDec")
+NumberIncDec.textContent =count;
+leftshowprice-= Number(leftpurchasefirstprice);
+console.log(leftshowprice);
+leftpurchasefirstprice.textContent=leftshowprice;
+}
+
+function inc(){
+    count++;
+    var NumberIncDec=document.querySelector("#betweenIncDec")
+    NumberIncDec.textContent =count;
+    leftshowprice+= Number(leftpurchasefirstprice);
+    console.log(leftshowprice);
+    leftpurchasefirstprice.textContent="leftshowprice";
+}
+
