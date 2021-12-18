@@ -6,7 +6,6 @@ product.map(function(elem){
     div.addEventListener("click",function(){
         console.log(elem);
         var view = [elem];
-        //window.location.href = "single.html";
         window.open('single.html', '_blank');
         localStorage.setItem("view",JSON.stringify(view))
     })
@@ -69,36 +68,64 @@ divText.append(name,by,ratingReview, divprice);
 
 
 
-var cartpage=JSON.parse(localStorage.getItem("champData"))
-console.log(cartpage)
-
-// cartpage.map(function(e){
-//     document.querySelector(#leftPurchaseName).textContent=e.productName
-// })
 
 
-var count=1
-var leftpurchasefirstprice=document.querySelector("#leftPurchasePriceFirst").innerText
-    leftshowprice=+leftpurchasefirstprice
+
+
+
+var count=localStorage.getItem("counter") || 1
+console.log(count)
+document.querySelector("#betweenIncDec").textContent=count
+
+
 
 function dec(){
     count--;
     if(count==0){
         window.location.href="cartempty.html"
+        return;
     }
 var NumberIncDec=document.querySelector("#betweenIncDec")
 NumberIncDec.textContent =count;
-leftshowprice-= Number(leftpurchasefirstprice);
-console.log(leftshowprice);
-leftpurchasefirstprice.textContent=leftshowprice;
+display(cartpage);
+localStorage.setItem("counter",count)
 }
 
 function inc(){
     count++;
     var NumberIncDec=document.querySelector("#betweenIncDec")
     NumberIncDec.textContent =count;
-    leftshowprice+= Number(leftpurchasefirstprice);
-    console.log(leftshowprice);
-    leftpurchasefirstprice.textContent="leftshowprice";
+    display(cartpage);
+    localStorage.setItem("counter",count)
 }
 
+
+
+
+var cartpage=JSON.parse(localStorage.getItem("cart"))
+
+display(cartpage);
+
+
+function display(cartpage){
+    cartpage.map(function(e){
+        document.querySelector("#leftPurchaseName").textContent=e.productName
+        document.querySelector("#quant").textContent=e.quantity
+       var leftpurchasefirstprice= document.querySelector("#leftPurchasePriceFirst").textContent= Number(e.price)*count;
+    
+       var mrp =document.querySelector("#mrpdash").textContent=1990*count;
+       document.querySelector("#cartSummarymrp").textContent="₹"+mrp;
+       var discount=document.querySelector("#cartSummaryDiscount").textContent="₹"+Math.floor(mrp-leftpurchasefirstprice)
+
+    if(leftpurchasefirstprice>500){
+        document.querySelector("#cartSummaryShippingFee").textContent="₹0"
+        document.querySelector("#cartSummaryToBePaid").textContent= "₹"+Number(e.price)*count 
+    }
+    else{
+        document.querySelector("#cartSummaryShippingFee").textContent="₹50";
+        document.querySelector("#cartSummaryToBePaid").textContent= "₹"+Number(e.price)*count +50
+    }
+    document.querySelector("#totalSavingGreen").textContent=discount;
+    })
+
+}

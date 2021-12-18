@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title >  Cart | 1mg</title>
     <link rel="stylesheet" href="cart.css">
 </head>
 <body>
@@ -24,15 +24,16 @@
                         <div>
                             <div id="leftPurchaseName">Show the Product detail here</div>
                             <div id="leftPurchasePrice">
-                                <div id="leftPurchasePriceFirst">298</div>
-                                <div>MRP</div>
+                                <div > ₹<b id="leftPurchasePriceFirst">995</b></div>
+                                <div id="leftPruchaseMrp">MRP &nbsp; ₹<span id="mrpdash">1990</span></div>
+                                
                             </div>
                         </div>
-                        <div >bottles of 60 tablets</div>
+                        <div id="quant" >bottles of 60 tablets</div>
                         <div id="removeItem">
                             <div>
                                 <div class="remove"><img src="https://img.1mg.com/images/delete_icon.svg" alt=""></div> 
-                                <div class="remove">Remove</div>
+                                <div class="remove" >Remove</div>
                             </div>
                             <div>
                                 <div id="dec" onclick="dec()"><img src="https://www.1mg.com/images/minus-cart.svg" alt="decrease" class=""></div>
@@ -88,25 +89,25 @@
                 <div>
                     <div class="cartSummary">
                         <span>Item Total(MRP)</span>
-                        <span>₹0</span>
+                        <span id="cartSummarymrp">₹1990</span>
                     </div>
                     <div class="cartSummary">
                         <span>Price Discount</span>
-                        <span>-₹0</span>
+                        <span id="cartSummaryDiscount">-₹995</span>
                     </div>
                         <hr>
                     <div class="cartSummary">
                         <span>Shipping Fee</span>
-                        <span>As per delivery address</span>
+                        <span id="cartSummaryShippingFee">As per delivery address</span>
                     </div>
                         <hr>
                     <div class="cartSummary"  id="fontbold">
                         <span>To be paid</span>
-                        <span>₹0</span>
+                        <span id="cartSummaryToBePaid">₹995</span>
                     </div>
                     <div id="cartTotalSavings">
                         <span id="totalSavingFont">Total Savings</span>
-                        <span id="totalSavingGreen">₹0</span>
+                        <span id="totalSavingGreen">₹995</span>
                     </div>
                 </div>
                 <div id="checkoutBox">
