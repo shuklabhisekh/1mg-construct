@@ -207,7 +207,7 @@ display: flex;
     width: 100%;
     height:10%;
     border:1px solid rgb(13, 98, 209); 
-    display: block;
+  
     line-height: 5px;
 }
 p{
@@ -218,8 +218,8 @@ p{
     width: 100%;
     height:35%;
     border:1px solid rgb(13, 98, 209); 
-    display: block;
-    line-height: 5px; 
+ 
+
     margin-top: 5%;
 }
 #show{
@@ -277,6 +277,9 @@ justify-content: space-between;
     border:1px solid rgb(13, 98, 209); 
     display: block;
 }
+/* #cx_box1:checked{
+background-color: rgb(211, 92, 92);
+} */
 #cx_box{
     width:10%;
     height:98%;
@@ -287,12 +290,12 @@ justify-content: space-between;
     height: 30%;
     width: 80%;
     border:1px solid rgb(13, 98, 209); 
-    display: block;
+    /* display: block; */
 }
 #button2{
     height:15%;
     border:1px solid rgb(196, 209, 13);
-    
+    justify-content: flex-end;
     border-radius:3%;
     border:1px solid rgb(13, 98, 209); 
     color: white;
@@ -333,9 +336,61 @@ margin-right: 10px;
     height: 70%;
     width: 100%;
     border:1px solid rgb(209, 13, 167); 
+    display: flex;
 }
+input{
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0px 5px;
+    line-height: 1.6em;
+    border: 0px solid transparent;
+    border-bottom-width: 2px;
+    border-bottom-color: rgba(0, 0, 0, 0.12);
+    outline: 0;
+    color: #212121;
+    height: 30px;
+    width: 90%;
+}
+input:focus{
+    border-color: indianred;
+}
+#payCardNumbar{
+    height: 30%;
+    width: 100%;
+    border:1px solid rgb(209, 13, 167); 
+}
+#ExpirySecurity{
+    height: 35%;
+    width: 100%;
+    border:1px solid rgb(20, 209, 13); 
+    margin-top: 2%;
+    display: flex;
+}
+#expirydata{
+    height: 100%;
+    width: 45%;
+    border:1px solid rgb(209, 13, 167); 
+    margin-right: 10%;
+}
+#Securitycode{
+    height: 100%;
+    width: 45%;
+    border:1px solid rgb(209, 13, 167); 
+    
+}
+#name_on_card{
+    margin-top: 1%;
+    height: 25%;
+    width: 100%;
+    border:1px solid rgb(13, 196, 209);
+}
+.logo_X{
 
-
+    height: 100%;
+    width: 13%;
+    border:1px solid rgb(2, 2, 2);
+    justify-items: center;
+}
     </style>
 </head>
 <body>
@@ -386,7 +441,24 @@ margin-right: 10px;
                       <div id="CandD"><h4>Credit & Debit Cards</h4>
                        <p> Add New Card For Payment</p>
                         </div>
-                        <div id="carddetail"></div>
+                        <div id="carddetail">
+                            
+                                <div id="pay_CardNumbar">
+                                <label><p>Card Numbar</p></label>
+                                <input type="text" placeholder="XXXX XXXX XXXX">
+                        
+                        </div>
+                         
+                         <div id="ExpirySecurity">
+                            <div id="expirydata"> <label><p>Expiry Date</p></label>
+                                <input type="text" placeholder="MM/YY"></div>
+                            <div id="Securitycode"> <label><p>Security Code</p></label>
+                                <input type="text" placeholder="XXXX"></div>
+                            </div>
+                    <div id="name_on_card">
+                        <input type="text" placeholder="Name On Card">
+                    </div>
+                        </div>
                         <div id="basic_info">
                             <div id="checkbox">
                              <input id="cx_box" type="checkbox" >
@@ -397,7 +469,14 @@ margin-right: 10px;
                             </div>
                         <div id="endbox">
                         <div id="av_logo"> <p>We support domestic credit and debit cards of following brands</p></div>
-                        <div id=paylogo></div>
+                        <div id=paylogo>
+                        
+                           <div class="logo_X" style="margin-left: 30%;"><img src="https://res.cloudinary.com/du8msdgbj/image/upload/q_auto,f_auto/v1530098811/marketing/szfylmvspyj5ccvhesnp.png"></div>
+                        
+                            <div class="logo_X"><img src="https://res.cloudinary.com/du8msdgbj/image/upload/q_auto,f_auto/v1530098792/marketing/vujtyvkwxchd16egv0wt.png"></div>
+                            <div class="logo_X"><img src="https://res.cloudinary.com/du8msdgbj/image/upload/q_auto,f_auto/v1530098898/marketing/rv6lj5fubobesvsomlzr.png"></div>
+                    
+                        </div>
                         </div>
                         </div>
                         
@@ -464,3 +543,14 @@ margin-right: 10px;
 </body>
 </html>
 <!-- border-bottom: 1px solid #f8f8f8; -->
+<!-- font-size: 14px !important;
+    font-weight: normal;
+    padding: 0px 5px;
+    line-height: 1.6em;
+    border: 0px solid transparent;
+    border-bottom-width: 2px;
+    border-bottom-color: rgba(0, 0, 0, 0.12);
+    outline: 0;
+    color: #212121;
+    height: 30px;
+} -->
