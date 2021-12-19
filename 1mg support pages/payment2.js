@@ -33,6 +33,6 @@ function display(cartpage){
 
 
 function cardPayment(){
-    
-    console.log("here")
+    alert("Check your email for Order Confirmation.")
+    // window.location.href="success.html"
 }

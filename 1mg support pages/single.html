@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>1mg Multivitamin</title>
     <style>
     
       /* style header start */
@@ -462,6 +462,10 @@
         border-radius: 10px;
         background-color: #fff;
         box-shadow: 0 1px 2px 1px rgb(0 0 0 / 30%);
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 33px;
+        color: #3b3b3b;
       }
       #cost > button {
         border-radius: 4px;
@@ -526,8 +530,8 @@
        #more {
         grid-area: more;
         /* background-color: darksalmon; */
-        background-color: chartreuse;
-        border: solid black 2px;
+        /* background-color: chartreuse; */
+        /* border: solid black 2px; */
       }
 
       /* down extra */
@@ -1064,7 +1068,7 @@ text-align: center;
                 
                 </div> 
               <div class="offers">Offers</div>
-              <div class="cart_icon"></div>
+              <div class="cart_icon" onclick="goToCartPage()"></div>
               <div class="help">Need Help?</div>
           </div>
       </div>
@@ -1763,5 +1767,9 @@ window.onclick = function(event) {
   }
 }
 // header end
+
+function goToCartPage(){
+  window.location.href="cart.html"
+}
 
 </script>
