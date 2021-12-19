@@ -47,7 +47,7 @@ window.onclick = function(event) {
 let cart_icon = document.getElementById("cart_icon");
 cart_icon.onclick = function(){
   console.log(window.location.href);
-  window.location.href = " file:///C:/Users/Bhushan/Desktop/New%20folder%20(2)/1mg-construct/1mg%20support%20pages/cart.html";
+  window.location.href = "cart.html";
 }
 
 let search_input = document.getElementById("search_input");
