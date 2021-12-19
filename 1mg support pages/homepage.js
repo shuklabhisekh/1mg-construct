@@ -37,10 +37,36 @@ signup_close.onclick = function() {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal) {
+  if (event.target == (login_modal || signup_modal)) {
     login_modal.style.display = "none";
     signup_modal.style.display = "none";
   }
+}
+
+
+let cart_icon = document.getElementById("cart_icon");
+cart_icon.onclick = function(){
+  console.log(window.location.href);
+  window.location.href = " file:///C:/Users/Bhushan/Desktop/New%20folder%20(2)/1mg-construct/1mg%20support%20pages/cart.html";
+}
+
+let search_input = document.getElementById("search_input");
+search_input.oninput = function(){
+  console.log(event.target.value);
+  localStorage.setItem("searchItem", event.target.value);
+}
+
+let login_number_input = document.getElementById("login_number_input");
+login_number_input.oninput = function(){
+  console.log(event.target.value);
+  localStorage.setItem("loginNumber", event.target.value);
+}
+
+
+let signup_number_input = document.getElementById("signup_number_input");
+signup_number_input.oninput = function(){
+  console.log(event.target.value);
+  localStorage.setItem("signupNumber", event.target.value);
 }
 // bhushan end
 // abhishek start
