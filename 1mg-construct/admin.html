@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Admin Page</h1>
+
+    <form action="" id="myForm">
+<br>
+        <input type="text" name="" id="prodName" placeholder="Enter Product Name">
+<br>
+        <input type="text" name="" id="by" placeholder="By">
+<br>
+        <input type="text" name="" id="rating" placeholder="Rating">
+<br>
+        <input type="text" name="" id="review" placeholder="review">
+<br>
+        <input type="text" id="h1" placeholder="heading1">
+<br>
+        <input type="text" id="h2" placeholder="heading2">
+<br>
+        <input type="text" id="h3" placeholder="heading3">
+
+<br>
+        <input type="text" name="" id="price" placeholder="Enter Price">
+<br>
+        <input type="text" id="discount" placeholder="discount">
+<br><br>
+        <input type="text" name="" id="url" placeholder="Enter Image URL">
+<br>
+        <input type="text" id="d1" placeholder="description1">
+<br>
+        <input type="text" id="d2" placeholder="description2">
+
+<br>
+        <input type="text" id="k1" placeholder="key ingri 1">
+<br>
+        <input type="text" id="k2" placeholder="key ingri 2">
+<br>
+        <input type="text" id="k3" placeholder="key ingri 3">
+<br>
+        <input type="text" id="k4" placeholder="key ingri 4">
+<br>
+        <input type="text" id="k5" placeholder="key ingri 5">
+<br>
+        <input type="text" id="k6" placeholder="key ingri 6">
+<br>
+        <input type="text" id="k7" placeholder="key ingri 7">
+<br>
+
+
+        <input type="text" id="kb1" placeholder="key benifit 1">
+<br>
+        <input type="text" id="kb2" placeholder="key benifit 2">
+<br>
+        <input type="text" id="kb3" placeholder="key benifit 3">
+<br>
+        <input type="text" id="kb4" placeholder="key benifit 4">
+<br>
+        <input type="text" id="kb5" placeholder="key benifit 5">
+
+<br>
+<input type="text" name="" id="direction" placeholder="direction">
+<br>
+<input type="text" id="saf1" placeholder="safety1">
+<br>
+<input type="text" id="saf2" placeholder="safety2">
+<br>
+<input type="text" id="saf3" placeholder="safety3">
+
+<br>
+        <input type="submit" name="" id="">
+    </form>
+
+    <button>Go To Shop</button>
+</body>
+</html>
+
+<script>
+    document.querySelector("#myForm").addEventListener('submit',form)
+
+    var prod1 = JSON.parse(localStorage.getItem("final")) || [];
+
+    function form(event){
+        event.preventDefault();
+        
+        var prodName = document.querySelector("#prodName").value;
+        var by = document.querySelector("#by").value;
+        var rating = document.querySelector("#rating").value;
+        var review = document.querySelector("#review").value;
+
+var h1 = document.querySelector("#h1").value;
+var h2 = document.querySelector("#h2").value;
+var h3 = document.querySelector("#h3").value;
+
+        var price = document.querySelector("#price").value;
+
+var discount = document.querySelector("#discount").value;
+
+        var url = document.querySelector("#url").value;
+
+var d1 = document.querySelector("#d1").value;
+var d2 = document.querySelector("#d2").value;
+
+var k1 = document.querySelector("#k1").value;
+var k2 = document.querySelector("#k2").value;
+var k3 = document.querySelector("#k3").value;
+var k4 = document.querySelector("#k4").value;
+var k5 = document.querySelector("#k5").value;
+var k6 = document.querySelector("#k6").value;
+var k7 = document.querySelector("#k7").value;
+
+var kb1 = document.querySelector("#kb1").value;
+var kb2 = document.querySelector("#kb2").value;
+var kb3 = document.querySelector("#kb3").value;
+var kb4 = document.querySelector("#kb4").value;
+var kb5 = document.querySelector("#kb5").value;
+
+var direction = document.querySelector("#direction").value;
+var saf1 = document.querySelector("#saf1").value;
+var saf2 = document.querySelector("#saf2").value;
+var saf3 = document.querySelector("#saf3").value;
+
+    
+
+        
+        var obj1 = {
+            productName : prodName,
+            productby : by,
+            rating: rating,
+            review : review,
+            prodHeading1: h1,
+            prodHeading2: h2,
+            prodHeading3: h3,
+            price: price,
+            discount: discount,
+            url: url,
+
+            description1: d1,
+            description2: d2,
+
+            keyIngredient1: k1,
+            keyIngredient2: k2,
+            keyIngredient3: k3,
+            keyIngredient4: k4,
+            keyIngredient5: k5,
+            keyIngredient6: k6,
+            keyIngredient7: k7,
+
+            keyBenefit1: kb1,
+            keyBenefit2: kb2,
+            keyBenefit3: kb3,
+            keyBenefit4: kb4,
+            keyBenefit5: kb5,
+
+            directionUse: direction,
+            safetyInfo1: saf1,
+            safetyInfo2:saf2,
+            safetyInfo3:saf3,
+        }
+        
+        prod1.push(obj1);
+        localStorage.setItem("final",JSON.stringify(prod1));
+    }
+
+    document.querySelector("button").addEventListener("click",function (){
+        window.location.href = "product.html";
+    })
+</script>
+
+
+
+
+
+
+
+

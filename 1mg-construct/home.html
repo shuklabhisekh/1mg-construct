@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            .smallbox1{
+            border: 1px solid red;
+            display: grid;
+            width: 600px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2,400px);
+            margin: auto;
+            font-family:"Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
+        } 
+        .smallbox1>div{
+            border: 1px solid blue;
+            display: grid; 
+            grid-template-rows: 50% 50%;
+            line-height: 17px;
+            padding: 10px;
+        }
+
+        .smallbox1>div>div:nth-child(2){
+            border: 2px solid black;
+            background-color: aquamarine;
+            /* font-size: 10px;
+            padding: 5px;
+            height: 100%; */
+        }
+
+        .smallbox1>div>div:nth-child(1)>img{
+            height: 60%;
+            position: relative;
+            width: 100%;
+            object-fit: contain;
+            margin-top: 20px;
+        }
+        .smallbox1>div>div:last-child>p:first-child,.smallbox1>div>div>p:last-child>{
+            font-size: 14px;
+        }
+       
+        .ratingreview{
+            display:flex;
+            border: 1px solid magenta;
+        }
+        .ratingdiv{
+            border: 1px solid gold;
+            color: white;
+            background-color: rgb(26,171,42);
+            padding: 0px;
+            border-radius: 5px;
+            margin-right: 20px;
+            font-weight:bolder ;
+            font-size: 12px;
+            height: 30px;
+            width: 50px;
+        }
+        .reviewfont{
+            color:rgb(118, 118, 118);
+            font-size:12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product</h1>
+
+    <div class="smallbox1">
+
+    </div>
+</body>
+</html>
+
+<script>
+    var product = JSON.parse(localStorage.getItem("ProjectData"));
+    var recent = [];
+
+    product.map(function(elem){
+        var div = document.createElement("div")
+        div.addEventListener("click",function(){
+            console.log(elem);
+            var view = [elem];
+            //window.location.href = "single.html";
+            window.open('single.html', '_blank');
+            localStorage.setItem("view",JSON.stringify(view))
+        })
+
+        var name = document.createElement("p");
+        name.textContent = elem.prodName;
+        
+        var by=document.createElement("p")
+        by.textContent=elem.by
+        by.setAttribute("class","reviewfont")
+
+        var rating = document.createElement("p");
+        rating.textContent = (elem.rating);
+
+        var review = document.createElement("p");
+        review.textContent = (elem.review);
+        review.setAttribute("class","reviewfont")
+
+        var img = document.createElement("img");
+        img.setAttribute("src", elem.url)
+
+         var price = document.createElement("p");
+        price.textContent = (elem.price);
+
+    var ratingReview=document.createElement("div")
+    ratingReview.setAttribute("class","ratingreview")
+    var ratingdiv=document.createElement("div")
+    ratingdiv.setAttribute("class","ratingdiv")
+    var reviewdiv=document.createElement("div")
+    reviewdiv.setAttribute("class","reviewdiv")   
+    var divImg = document.createElement("div")    
+    divImg.append(img);
+    var divText = document.createElement("div") 
+    ratingdiv.append(rating)
+    reviewdiv.append(review)
+     ratingReview.append(ratingdiv,reviewdiv)   
+    divText.append(name,by,ratingReview, price);
+
+        div.append(divImg, divText);
+
+        document.querySelector(".smallbox1").append(div);
+
+
+    })
+</script>

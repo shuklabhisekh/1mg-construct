@@ -1,4 +1,4 @@
-var product = JSON.parse(localStorage.getItem("champData")); // it's ProjectData instead of champData
+var product = JSON.parse(localStorage.getItem("ProjectData"));
 var recent = [];
 
 product.map(function(elem){
@@ -103,7 +103,7 @@ function inc(){
 
 
 var cartpage=JSON.parse(localStorage.getItem("cart"))
-console.log(cartpage)
+
 display(cartpage);
 
 

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: grid;
+            /* grid-template-columns: repeat(7, 1fr); */
+            grid-template: repeat(1,auto
+            )/repeat(7, 1fr);
+            width: 80%;
+            margin: auto;
+            grid-gap: 3%;
+            background-color: blue;
+        } 
+        /* #container>div{
+            background-color: brown;
+            width: auto;
+        } */
+      
+
+        #container>div>div:nth-child(2){
+            background-color: aquamarine;
+            /* height: 28%; */
+            text-align: left;
+            font-size: 10px;
+            padding: 5px;
+            /* width: auto; */
+        }
+
+        /* #cont>div{
+            //background-color: bisque;
+            margin: 5px;
+        } */
+        /* #cont>div{
+            padding: 20px;
+        } */
+
+        #container>div>div:nth-child(1)>img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Product</h1> -->
+
+    <div id="container"></div>
+</body>
+</html>
+
+<script>
+    var product = JSON.parse(localStorage.getItem("champData"));
+    // var recent = [];
+
+    var slicee = product.slice(0,7);
+    slicee.map(function(elem){
+        
+        var div = document.createElement("div")
+        div.addEventListener("click",function(){
+            console.log(elem);
+            var view = [elem];
+            //window.location.href = "single.html";
+            window.open('single.html', '_blank');
+            localStorage.setItem("view",JSON.stringify(view))
+        })
+
+        var name = document.createElement("p");
+        name.textContent = elem.productName;
+
+        var rating = document.createElement("p");
+        rating.textContent = (elem.rating);
+
+        // var review = document.createElement("p");
+        // review.textContent = (elem.review);
+
+        var img = document.createElement("img");
+        img.setAttribute("src", elem.url)
+
+         var price = document.createElement("h2");
+        price.textContent = ("Rs "+elem.price);
+
+    var divImg = document.createElement("div")    
+    divImg.append(img);
+    var divText = document.createElement("div")    
+    divText.append(name,rating, price);
+
+    var button = document.createElement("button");
+    button.textContent = "add to cart";
+    button.addEventListener("click",function(){
+        console.log("here");
+        addCart(elem);
+    })
+
+
+        div.append(divImg, divText,button);
+
+        document.querySelector("#container").append(div);
+
+
+    });
+
+    function addCart(elem){
+        console.log(elem);
+    }
+</script>
