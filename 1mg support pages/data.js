@@ -223,7 +223,7 @@ var data = [
       "Helps treat heartburn (acidity) and indigestion",
       "Helps reduce the overall acid level in the stomach",
     ],
-    price: "198.23",
+    price: "198",
     discount: "18",
     url: "https://onemg.gumlet.io/image/upload/l_watermark_346,w_690,h_700/a_ignore,w_690,h_700,c_pad,q_auto,f_auto/v1600174116/cropped/pf3vraq88havppemxjar.png",
     description1: "",
