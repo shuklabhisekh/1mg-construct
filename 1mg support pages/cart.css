@@ -410,6 +410,7 @@ cursor: pointer;
 .reviewfont{
     color:rgb(118, 118, 118);
     font-size:12px;
+    margin-top: -2px;
 }
 #pricediv{
     display:flex;

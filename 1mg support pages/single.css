@@ -52,6 +52,7 @@
   background: url(https://res.cloudinary.com/du8msdgbj/image/upload/v1570101941/cart-icon-rebrand_vp4k0f.svg) no-repeat;
   width: 23px;
   height: 23px;
+  cursor: pointer;
 }
 
 .city_list{
@@ -457,6 +458,7 @@ margin: none;
       font-size: 23px;
       line-height: 33px;
       color: #3b3b3b;
+      height: 300px;
     }
     #cost > button {
       border-radius: 4px;
@@ -467,8 +469,58 @@ margin: none;
       cursor: pointer;
       text-transform: uppercase;
       text-align: center;
-      width: 100%;
-      margin-bottom: 0px;
+      width: 85%;
+      margin: 30px;
+    }
+    #recent{
+      font-size: 13px;
+      background-color:rgb(237, 249, 238);
+      margin-top: 0px;
+      padding-left: 30px;
+    }
+    #divPricecont{
+      display: flex;
+      margin-bottom:15px;
+      width: 80%;
+      margin-left: 30px;
+      /* border: 3px solid red; */
+      margin-top: 30px;
+
+    }
+    #divPricecont>div{
+      margin-top: 4px;
+    }
+    #divPricecont>p{
+      margin-left: 20px;
+      /* height: 15px; */
+      margin-top: 5px;
+      font-size: 14px;
+      font-weight: 600;
+      color:rgb(26, 171, 42);
+      background-color:rgb(237, 249, 238);
+      /* padding-top: -20px; */
+      text-align: center;
+    }
+    #divPrice2cont{
+      display: flex;
+      width: 80%;
+      margin-left: 30px;
+      /* border: 3px solid rebeccapurple; */
+      height: 25px;
+    }
+   
+    #divPrice2cont>p{
+      font-size: 14px;
+      /* border: 1px solid blue; */
+      margin-top: 0px;
+    }
+    #divPrice2cont>img{
+      height: 20px;
+    }
+    #divPrice2Img{
+      /* border: 2px solid salmon; */
+      margin-left: 90px;
+      /* margin-bottom: 20px; */
     }
 
     #info {

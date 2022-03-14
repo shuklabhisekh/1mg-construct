@@ -291,7 +291,7 @@ justify-content: space-between;
     color: white;
 }
     
-#button2>button{
+#button2>a>button{
 background-color: rgb(238, 78, 78);
 margin-right: 10px;
     margin-bottom: 10px;

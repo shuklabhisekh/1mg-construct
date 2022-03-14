@@ -17,7 +17,7 @@
     <div class="header">
       <div class="header_first_row">
           <div class="header_first_row_first_section">
-              <div class="logo"><img class="logo_image" src="photos/tata_1mg_logo.svg"></img></div>
+              <div class="logo"> <a href="homepage.html"><img class="logo_image" src="photos/tata_1mg_logo.svg"></img></a></div>
               <div class="text_inside_first_header_row">MEDICINES</div>
               <div class="text_inside_first_header_row">LAB TESTS</div>
               <div class="text_inside_first_header_row">ASK DOCTOR</div>
@@ -523,10 +523,27 @@
     combo.append(rat, rev);
     p.append(divName, by, combo, "Product Highlights", un);
     p.setAttribute("id", "prod");
-
+console.log(elem,"testing")
     // price , add to cart
+    var divPricecont=document.createElement("div")
+    divPricecont.setAttribute("id","divPricecont")
     var divPrice = document.createElement("div");
-    divPrice.textContent = "₹ " + elem.price;
+    divPrice.textContent = `₹${ elem.price}`
+    var divPricetext = document.createElement("p")
+    divPricetext.textContent = ` ${elem.discount}% off`
+    divPricecont.append(divPrice,divPricetext)
+
+    var divPrice2cont=document.createElement("div")
+    divPrice2cont.setAttribute("id","divPrice2cont")
+    var divPrice2 = document.createElement("div")
+    divPrice2.textContent = `₹${ elem.price}`
+    divPrice2text=document.createElement("p")
+    divPrice2text.textContent= `+ free shipping and 5% cashback with`
+    var divPrice2Img = document.createElement("img")
+    divPrice2Img.setAttribute("id","divPrice2Img")
+    
+    divPrice2Img.src = "https://res.cloudinary.com/du8msdgbj/image/upload/v1613645053/marketing/phb2bz61etrdmuurfdoq.png"
+    divPrice2cont.append(divPrice2,divPrice2text)
 
     var btn = document.createElement("button");
     btn.textContent = "Add To Cart";
@@ -546,6 +563,7 @@
     }
 
     var btn1 = document.createElement("button");
+    btn1.setAttribute("id","emptycartButton")
     btn1.textContent = "Empty Cart";
     btn1.addEventListener("click", function () {
       console.log("here1");
@@ -560,10 +578,13 @@
       }
       localStorage.setItem("cart", JSON.stringify(localCart));
     }
+    var recent = document.createElement("p")
+    recent.setAttribute("id","recent")
+    recent.textContent="389 people viewed this recently"
     var divbt = document.createElement("div");
     divbt.setAttribute("id", "cost");
 
-    divbt.append(divPrice, btn, btn1);
+    divbt.append(recent, divPricecont,divPrice2cont,divPrice2Img,btn);
 
     // Product discription information
     // info by, description(dd1,dd2),keyIngridents, keyIng list, keyBenefits, DirectionForUse, uses,safetyInfo, saftey measures

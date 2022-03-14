@@ -1,5 +1,4 @@
 #whole{
-  border: 1px solid black;
   width: 100%;
   overflow: hidden;
 }
@@ -59,6 +58,7 @@
     background: url(https://res.cloudinary.com/du8msdgbj/image/upload/v1570101941/cart-icon-rebrand_vp4k0f.svg) no-repeat;
     width: 23px;
     height: 23px;
+    cursor: pointer;
 }
 
 .city_list{
@@ -331,7 +331,6 @@ background-color:rgb(255, 111, 97);
 
   .login_input{
     font-size: 16px;
-    border-bottom: 2px solid #d50000;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -520,10 +519,14 @@ background-color:rgb(255, 111, 97);
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
-   font-size: 15px;
+   font-size: 14px;
    color: #212121;
+   padding: 0px 25px;
 }
+#text_inside_first_header_row1{
+  color: #ff6f61; 
 
+}
 .text_inside_first_header_row{
     font-weight: 600;
     font-size: 16px;
@@ -831,7 +834,6 @@ background-color:rgb(255, 111, 97);
 }
 
 #smallbox1{
-    border: 5px solid green;
     text-align: center;
     margin: auto;
     width: 96%;
@@ -848,7 +850,7 @@ background-color:rgb(255, 111, 97);
 }
 
 .smallbox2{
- border: 1px solid purple;
+  cursor: pointer;
  display: grid;
  grid-template-rows: 210px;
  grid-template-columns: repeat(7,13%); 
@@ -885,6 +887,7 @@ button{
     padding: 8px 8px ;
     border-radius: 5px;
     font-weight: bolder;
+    cursor: pointer;
 }
 /* abhishek end */
 /* shyam start */
@@ -893,11 +896,11 @@ button{
       sans-serif;
   }
   .home-1mg-products{
-    border: 1px solid rgb(20, 102, 0);
       margin: 40px 0px;
+     
   }
   .brand {
-    border: 1px solid red;
+    cursor: pointer;
     display: grid;
     padding-left: 5%;
     padding-right: 5%;
@@ -1030,14 +1033,11 @@ button{
 /* Neeraj start */
 
 #neeraj{
-  border: 3px solid cyan;
   /* padding: 0px; */
   margin-bottom: 40px;
 }
 #main{
-  border: 3px solid red;
   /* padding: 0px; */
-  border: 1px solid blue;
   margin: 30px 0px;
   background-color: #fff;
   /* padding: 1rem 2rem; */
@@ -1049,7 +1049,6 @@ button{
 
 .container {
  margin-bottom: 40px;
- border: 3px solid olive;
  /* width: auto; */
   }
   .container > p {
