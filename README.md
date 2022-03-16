@@ -1,5 +1,5 @@
 
-# **_1mg.com Clone - Construct-Week-Project_**
+# **_1mg.com Clone**
 
 
 
