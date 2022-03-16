@@ -1,5 +1,5 @@
 
-# **_1mg.com Clone**
+# **1mg.com Clone**
 
 
 
