@@ -1,5 +1,5 @@
 
-# **1mg.com Clone**
+# **Clone of 1mg.com**
 
 
 
@@ -17,13 +17,13 @@ In case of any suggestion and query feel free to connect us
 
 <div style='page-break-after: always'></div>
 
-### _<u>Installation</u>_
+### <u>Installation</u>
 
 Download or clone the Repo and Run Locally
 
 <div style='page-break-after: always'></div>
 
-### _<u>Pages Build</u>
+### <u>Pages Build</u>
 
 - Home Page
 - Sign In, 
@@ -36,12 +36,12 @@ Download or clone the Repo and Run Locally
 
 <div style='page-break-after: always'></div>
 
-### _<u>Project deployed link</u>_
+### <u>Project deployed link</u>
 ```
 https://clone-of-1mg.vercel.app/index.html
 
 ```
-### _<u>Project Overview</u>_
+### <u>Project Overview</u>
 
 #### Home Page 
 ![image](https://user-images.githubusercontent.com/95949460/158538943-9b4bfb0c-bddb-4d56-bf3c-11e82bff68d3.png)
@@ -61,43 +61,43 @@ https://clone-of-1mg.vercel.app/index.html
 
 <div style='page-break-after: always'></div>
 
-### _<u>Credits :</u>_
+### <u>Credits :</u>
 
 Abhishek Shukla
 
-> <a href="https://github.com/shuklabhisekh" target="_blank">Github</a>
+- <a href="https://github.com/shuklabhisekh" target="_blank">Github</a>
 
-> <a href="https://www.linkedin.com/in/shuklabhisekh/" target="_blank">Linkedin</a>
+- <a href="https://www.linkedin.com/in/shuklabhisekh/" target="_blank">Linkedin</a>
 
 Pranav Dalvi
 
-> <a href="https://github.com/PranavDalvi9" target="_blank">Github</a>
+- <a href="https://github.com/PranavDalvi9" target="_blank">Github</a>
 
-> <a href="https://www.linkedin.com/in/pranavsanjaydalvi/" target="_blank">Linkedin</a>
+- <a href="https://www.linkedin.com/in/pranavsanjaydalvi/" target="_blank">Linkedin</a>
 
 Ritu Bankey
 
-> <a href="https://github.com/Ritu1011" target="_blank">Github</a>
+- <a href="https://github.com/Ritu1011" target="_blank">Github</a>
 
-> <a href="https://www.linkedin.com/in/ritu-bankey-857160211/" target="_blank">Linkedin</a>
+- <a href="https://www.linkedin.com/in/ritu-bankey-857160211/" target="_blank">Linkedin</a>
 
 Bhushan Koli
 
-> <a href="https://www.linkedin.com/in/bhushan-koli-3aabb41a8/" target="_blank">Linkedin</a>
+- <a href="https://www.linkedin.com/in/bhushan-koli-3aabb41a8/" target="_blank">Linkedin</a>
 
-> <a href="https://github.com/Bhushankoli28" target="_blank">Github</a>
+- <a href="https://github.com/Bhushankoli28" target="_blank">Github</a>
 
 Neeraj Singh
 
-> <a href="https://github.com/NeerajSingh007" target="_blank">Github</a>
+- <a href="https://github.com/NeerajSingh007" target="_blank">Github</a>
 
-> <a href="https://www.linkedin.com/in/neeraj-singh-751235166/" target="_blank">Linkedin</a>
+- <a href="https://www.linkedin.com/in/neeraj-singh-751235166/" target="_blank">Linkedin</a>
 
 Megha Shyam Gollu
 
-> <a href="https://github.com/meghashyamgollu" target="_blank">Github</a>
+- <a href="https://github.com/meghashyamgollu" target="_blank">Github</a>
 
-> <a href="https://www.linkedin.com/in/megha-shyam-gollu/" target="_blank">Linkedin</a>
+- <a href="https://www.linkedin.com/in/megha-shyam-gollu/" target="_blank">Linkedin</a>
 
 
 
