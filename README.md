@@ -3,7 +3,8 @@
 
 
 
-In this project we have tried to make a clone of <a href="https://www.1mg.com/" target="_blank">1mg.com</a>. With our efforts and the technology stack, that we have learned till now in Unit-2 in Masai School,we were able to successfully cloned with some e-commerce functionalities.
+In this project we have tried to make a clone of <a href="https://www.1mg.com/" target="_blank">1mg.com</a>. Tata 1mg is India’s leading digital healthcare platform with a mission of #BringingCareToHealth.At Tata 1mg, our goal is to make healthcare understandable, accessible and affordable in India.
+With our efforts and the technology stack, that we have learned till now in Unit-2 in Masai School,we were able to successfully cloned with e-commerce functionalities.
 In case of any suggestion and query feel free to connect us
 
 <div style='page-break-after: always'></div>
