@@ -8,7 +8,7 @@ In case of any suggestion and query feel free to connect us
 
 <div style='page-break-after: always'></div>
 
-### <u>Tech</u>
+### <u>Tech :</u>
 
 - HTML
 - CSS
@@ -17,13 +17,13 @@ In case of any suggestion and query feel free to connect us
 
 <div style='page-break-after: always'></div>
 
-### <u>Installation</u>
+### <u>Installation :</u>
 
 Download or clone the Repo and Run Locally
 
 <div style='page-break-after: always'></div>
 
-### <u>Pages Build</u>
+### <u>Pages Build :</u>
 
 - Home Page
 - Sign In, 
@@ -36,22 +36,22 @@ Download or clone the Repo and Run Locally
 
 <div style='page-break-after: always'></div>
 
-### <u>Project deployed link</u>
+### <u>Project deployed link :</u>
 ```
 https://clone-of-1mg.vercel.app/index.html
 
 ```
-### <u>Project Overview</u>
+### <u>Project Overview :</u>
 
-#### Home Page 
+#### Home Page -
 ![image](https://user-images.githubusercontent.com/95949460/158538943-9b4bfb0c-bddb-4d56-bf3c-11e82bff68d3.png)
-#### Product detail Page
+#### Product detail Page -
 ![image](https://user-images.githubusercontent.com/95949460/158539785-b0583ff2-224a-442c-a755-7569e4215750.png)
-#### Cart Page
+#### Cart Page -
 ![image](https://user-images.githubusercontent.com/95949460/158539962-d0b4ba53-fc7b-40b7-b5cc-0d6d143851e9.png)
-#### Checkout Page
+#### Checkout Page -
 ![image](https://user-images.githubusercontent.com/95949460/158540177-a7aadf7e-646f-450c-bebc-2c64ceaf8c14.png)
-#### Payment Page 
+#### Payment Page -
 ![image](https://user-images.githubusercontent.com/95949460/158540353-f4c09fa4-635b-47ce-9159-d0b7de7623da.png)
 
 
