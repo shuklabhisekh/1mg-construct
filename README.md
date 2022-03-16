@@ -40,6 +40,22 @@ Download or clone the Repo and Run Locally
 https://clone-of-1mg.vercel.app/index.html
 
 ```
+### _<u>Project Overview</u>
+
+- Home Page 
+![image](https://user-images.githubusercontent.com/95949460/158538943-9b4bfb0c-bddb-4d56-bf3c-11e82bff68d3.png
+- Product detail Page
+![image](https://user-images.githubusercontent.com/95949460/158539785-b0583ff2-224a-442c-a755-7569e4215750.png)
+- Cart Page
+![image](https://user-images.githubusercontent.com/95949460/158539962-d0b4ba53-fc7b-40b7-b5cc-0d6d143851e9.png)
+- Checkout Page
+![image](https://user-images.githubusercontent.com/95949460/158540177-a7aadf7e-646f-450c-bebc-2c64ceaf8c14.png)
+- Payment Page 
+![image](https://user-images.githubusercontent.com/95949460/158540353-f4c09fa4-635b-47ce-9159-d0b7de7623da.png)
+
+
+
+
 
 
 <div style='page-break-after: always'></div>
