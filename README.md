@@ -32,7 +32,7 @@ Download or clone the Repo and Run Locally
 - Sign In, 
 - Product page, 
 - Cart Page 
-- Chekout Page
+- Checkout Page
 
 <div style='page-break-after: always'></div>
 
