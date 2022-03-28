@@ -1,5 +1,5 @@
 
-# **Clone of 1mg.com**  &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;    &nbsp;   &nbsp;    &nbsp;   &nbsp;   &nbsp;   &nbsp;  &nbsp;   &nbsp;    &nbsp;   &nbsp;   &nbsp;   &nbsp;  &nbsp;   &nbsp;   &nbsp;  &nbsp;   &nbsp;   &nbsp; &nbsp;  &nbsp;   &nbsp;   &nbsp;  &nbsp;   &nbsp;  &nbsp;  &nbsp;   &nbsp;  &nbsp;   <img src="https://www.1mg.com/faviconRebrand.ico"/>
+# **Clone of 1mg.com**  &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;    &nbsp;   &nbsp;    &nbsp;   &nbsp;   &nbsp;   &nbsp;  &nbsp;   &nbsp;    &nbsp;   &nbsp;   &nbsp;   &nbsp;  &nbsp;   &nbsp;   &nbsp;  &nbsp;   &nbsp;   &nbsp; &nbsp;  &nbsp;   &nbsp;    &nbsp;  &nbsp;   &nbsp;  &nbsp;   <img src="https://www.1mg.com/faviconRebrand.ico"/>
 
 
 
